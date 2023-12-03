@@ -381,7 +381,7 @@ html {
 }
 
 .about {
-  background-image: url("/images/shutterstock_2137531191.png");
+  background-image: url("images/shutterstock_2137531191.png");
   background-repeat: no-repeat;
   background-size: 100% 970px;
   background-position: center bottom;
@@ -415,7 +415,7 @@ html {
 .fight {
   padding-bottom: 210px;
   position: relative;
-  background-image: url("/images/podlozhki/fight.jpg");
+  background-image: url("images/podlozhki/fight.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
@@ -493,7 +493,7 @@ html {
           box-shadow: 0px -45px 100px 10px #051114;
   padding-bottom: 326px;
   position: relative;
-  background-image: url("/images/podlozhki/shariki.jpg");
+  background-image: url("images/podlozhki/shariki.jpg");
   background-repeat: no-repeat;
   background-position: 0px -60px;
   background-size: cover;
@@ -584,7 +584,7 @@ html {
 
 .run {
   padding-bottom: 100px;
-  background: url("/images/Hue_Saturation 1.png");
+  background: url("images/Hue_Saturation 1.png");
   background-repeat: no-repeat;
   background-position: center -250px;
 }
@@ -672,7 +672,7 @@ html {
           box-shadow: 0px -45px 30px 8px #121401;
   padding-bottom: 276px;
   position: relative;
-  background-image: url("../images/podlozhki/castum.jpg");
+  background-image: url("..images/podlozhki/castum.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
@@ -753,7 +753,7 @@ html {
 
 .pers {
   padding-bottom: 70px;
-  background: url("/images/bg_photo_z.jpg");
+  background: url("images/bg_photo_z.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0px;
@@ -828,7 +828,7 @@ html {
           box-shadow: 0px -45px 30px 8px #001201;
   padding-bottom: 200px;
   position: relative;
-  background-image: url("../images/podlozhki/lobby.jpg");
+  background-image: url("..images/podlozhki/lobby.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
@@ -908,7 +908,7 @@ html {
 }
 
 .video {
-  background-image: url("../images/bg_vidos.jpg");
+  background-image: url("..images/bg_vidos.jpg");
   background-repeat: repeat no-repeat;
   margin-bottom: 60px;
 }
@@ -924,7 +924,7 @@ html {
           box-shadow: 0px -45px 70px 30px #220a13;
   padding-bottom: 200px;
   position: relative;
-  background-image: url("../images/podlozhki/krovat.jpg");
+  background-image: url("..images/podlozhki/krovat.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
@@ -1011,7 +1011,7 @@ html {
           box-shadow: 0px -45px 100px 50px #091d22;
   padding-bottom: 376px;
   position: relative;
-  background-image: url("/images/podlozhki/klan.jpg");
+  background-image: url("images/podlozhki/klan.jpg");
   background-repeat: no-repeat;
   background-position: 0px -60px;
   background-size: cover;
@@ -1093,7 +1093,7 @@ html {
 .moda {
   padding-bottom: 300px;
   position: relative;
-  background-image: url("/images/podlozhki/magaz.jpg");
+  background-image: url("images/podlozhki/magaz.jpg");
   background-repeat: no-repeat;
   background-position: 0px -80px;
   background-size: cover;
@@ -1177,7 +1177,7 @@ html {
           box-shadow: 0px -85px 50px 50px #2e1b03;
   padding-bottom: 270px;
   position: relative;
-  background-image: url("/images/podlozhki/vip.jpg");
+  background-image: url("images/podlozhki/vip.jpg");
   background-repeat: no-repeat;
   background-position: 0px -100px;
   background-size: cover;
@@ -1257,7 +1257,7 @@ html {
 }
 
 .tous {
-  background: url("/images/kukla_k_nam.png");
+  background: url("images/kukla_k_nam.png");
   background-repeat: no-repeat;
   background-position: center 0;
 }
@@ -1315,7 +1315,7 @@ html {
 }
 
 .footer {
-  background: url("/images/futer.png");
+  background: url("images/futer.png");
   padding-top: 60px;
 }
 .footer nav {

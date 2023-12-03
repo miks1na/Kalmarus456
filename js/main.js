@@ -47,12 +47,12 @@ document.addEventListener('scroll', () => {
     play.forEach(pl => {
       pl.classList.add('header__play-active')
     })
-    logo.setAttribute('src', '/images/lunapark.png')
+    logo.setAttribute('src', 'images/lunapark.png')
   } else if (window.scrollY < 500){
     play.forEach(pl => {
       pl.classList.remove('header__play-active')
     })
-    logo.setAttribute('src', '/images/kalmarus456.png')
+    logo.setAttribute('src', 'images/kalmarus456.png')
   }
 })
 let count = document.querySelector('.header__flag')
