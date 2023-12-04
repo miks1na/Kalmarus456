@@ -91,6 +91,10 @@ html {
   opacity: 0.4;
 }
 
+.tous__par a {
+  color: chocolate;
+}
+
 .header__inner {
   position: relative;
   display: -webkit-box;
@@ -345,7 +349,7 @@ html {
   text-shadow: -5.416px 7.188px 16px rgba(0, 0, 0, 0.42);
   margin-bottom: 20px;
   font-weight: 400;
-  max-width: 310px;
+  max-width: 320px;
   font-weight: 900;
 }
 .main__right .main__subtitle {
@@ -389,6 +393,28 @@ html {
   -webkit-box-shadow: inset 0px 0px 100px #190224;
           box-shadow: inset 0px 0px 100px #190224;
 }
+.about .about__after {
+  display: none;
+  width: 40px;
+  height: 80px;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.about .about__after img {
+  width: 40px;
+  height: 80px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.about__after-active {
+  -webkit-transform: rotate(-180deg) translate(50%) !important;
+          transform: rotate(-180deg) translate(50%) !important;
+}
 .about__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,12 +423,15 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 20px 0 32px 0;
+  padding: 20px 0 42px 0;
   gap: 22px;
+  position: relative;
 }
-.about__img img {
+.about img {
   width: 226px;
   height: 298px;
+  float: left;
+  margin-right: 25px;
 }
 .about__text {
   padding-top: 32px;
@@ -410,7 +439,13 @@ html {
   font-family: "Roboto";
   color: rgb(162, 162, 162);
   line-height: 1.64;
-  text-align: left;
+  height: 300px;
+  overflow: hidden;
+}
+.about__text-active {
+  height: auto;
+  display: inline;
+  margin-top: 32px;
 }
 
 .fight {
@@ -420,6 +455,25 @@ html {
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
+}
+.fight__after {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.fight__after-active {
+  -webkit-transform: rotate(-180deg) translate(50%);
+          transform: rotate(-180deg) translate(50%);
+}
+.fight__after img {
+  width: 40px;
+  height: 80px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .fight__img {
   position: absolute;
@@ -453,13 +507,14 @@ html {
 .fight__main {
   border-radius: 14px;
   background-color: rgba(0, 0, 0, 0.702);
-  padding: 21px 31px 55px 20px;
+  padding: 21px 31px 45px 20px;
   margin-left: 9px;
   max-width: 733px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
+  position: relative;
 }
 .fight__title {
   display: inline;
@@ -487,6 +542,11 @@ html {
   color: rgb(162, 162, 162);
   line-height: 1.64;
   text-align: left;
+  height: 320px;
+  overflow: hidden;
+}
+.fight__par-active {
+  height: auto !important;
 }
 
 .online {
@@ -498,6 +558,26 @@ html {
   background-repeat: no-repeat;
   background-position: 0px -60px;
   background-size: cover;
+}
+.online__after {
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.online__after-active {
+  -webkit-transform: rotate(-180deg) translate(50%);
+          transform: rotate(-180deg) translate(50%);
+}
+.online__after img {
+  width: 40px !important;
+  height: 80px !important;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .online__container {
   position: relative;
@@ -582,12 +662,37 @@ html {
   line-height: 1.64;
   text-align: left;
 }
+.online__par-active {
+  height: auto !important;
+}
 
 .run {
   padding-bottom: 100px;
   background: url("https://miks1na.github.io/Kalmarus456/images/Hue_Saturation 1.png");
   background-repeat: no-repeat;
   background-position: center -250px;
+}
+.run__text {
+  padding-bottom: 45px;
+}
+.run__after {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.run__after-active {
+  -webkit-transform: rotate(-180deg) translate(50%);
+          transform: rotate(-180deg) translate(50%);
+}
+.run__after img {
+  width: 40px;
+  height: 80px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .run__inner {
   position: relative;
@@ -611,6 +716,12 @@ html {
   color: rgb(162, 162, 162);
   line-height: 1.64;
   text-align: left;
+  height: 85px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.run .run__par-active {
+  height: auto;
 }
 .run img {
   width: 100%;
@@ -635,16 +746,23 @@ html {
 .run .run-pagination {
   position: absolute;
   z-index: 10;
-  top: 490px;
+  top: 500px;
   left: 50%;
   -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  width: auto;
+  transform: translate(-50%);
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .run .swiper-button-prev-run {
   position: absolute;
   left: 0px;
-  top: 205px;
+  top: 28%;
   width: 40px;
   height: 80px;
   cursor: pointer;
@@ -655,7 +773,7 @@ html {
 }
 .run .swiper-button-next-run {
   position: absolute;
-  top: 205px;
+  top: 28%;
   right: 0;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -677,6 +795,26 @@ html {
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
+}
+.custom__after {
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.custom__after-active {
+  -webkit-transform: rotate(-180deg) translate(50%);
+          transform: rotate(-180deg) translate(50%);
+}
+.custom__after img {
+  width: 40px;
+  height: 80px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .custom__container {
   position: relative;
@@ -751,6 +889,9 @@ html {
   line-height: 1.64;
   text-align: left;
 }
+.custom__par-active {
+  height: auto !important;
+}
 
 .pers {
   padding-bottom: 70px;
@@ -791,11 +932,15 @@ html {
 .pers .pers-pagination {
   position: absolute;
   z-index: 10;
-  top: 470px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  width: auto;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .pers .swiper-button-prev-pers {
   position: absolute;
@@ -833,6 +978,26 @@ html {
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
+}
+.friends__after {
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.friends__after-active {
+  -webkit-transform: rotate(-180deg) translate(50%);
+          transform: rotate(-180deg) translate(50%);
+}
+.friends__after img {
+  width: 40px;
+  height: 80px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .friends__container {
   position: relative;
@@ -907,6 +1072,9 @@ html {
   line-height: 1.64;
   text-align: left;
 }
+.friends__par-active {
+  height: auto !important;
+}
 
 .video {
   background-image: url("https://miks1na.github.io/Kalmarus456/images/bg_vidos.jpg");
@@ -929,6 +1097,26 @@ html {
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
+}
+.loc__after {
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.loc__after-active {
+  -webkit-transform: rotate(-180deg) translate(50%);
+          transform: rotate(-180deg) translate(50%);
+}
+.loc__after img {
+  width: 40px;
+  height: 80px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .loc__container {
   position: relative;
@@ -1005,6 +1193,10 @@ html {
   color: rgb(162, 162, 162);
   line-height: 1.64;
   text-align: left;
+  overflow: hidden;
+}
+.loc__par-active {
+  height: auto !important;
 }
 
 .clan {
@@ -1016,6 +1208,26 @@ html {
   background-repeat: no-repeat;
   background-position: 0px -60px;
   background-size: cover;
+}
+.clan__after {
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.clan__after-active {
+  -webkit-transform: rotate(-180deg) translate(50%);
+          transform: rotate(-180deg) translate(50%);
+}
+.clan__after img {
+  width: 40px;
+  height: 80px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .clan__container {
   position: relative;
@@ -1084,11 +1296,15 @@ html {
   margin-bottom: 5px;
 }
 .clan__par {
+  overflow: hidden;
   font-size: 19px;
   font-family: "Roboto";
   color: rgb(162, 162, 162);
   line-height: 1.64;
   text-align: left;
+}
+.clan__par-active {
+  height: auto !important;
 }
 
 .moda {
@@ -1098,6 +1314,26 @@ html {
   background-repeat: no-repeat;
   background-position: 0px -80px;
   background-size: cover;
+}
+.moda__after {
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.moda__after-active {
+  -webkit-transform: rotate(-180deg) translate(50%);
+          transform: rotate(-180deg) translate(50%);
+}
+.moda__after img {
+  width: 40px;
+  height: 80px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .moda__container {
   position: relative;
@@ -1166,11 +1402,15 @@ html {
   margin-bottom: 5px;
 }
 .moda__par {
+  overflow: hidden;
   font-size: 19px;
   font-family: "Roboto";
   color: rgb(162, 162, 162);
   line-height: 1.64;
   text-align: left;
+}
+.moda__par-active {
+  height: auto !important;
 }
 
 .vip {
@@ -1182,6 +1422,26 @@ html {
   background-repeat: no-repeat;
   background-position: 0px -100px;
   background-size: cover;
+}
+.vip__after {
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.vip__after-active {
+  -webkit-transform: rotate(-180deg) translate(50%);
+          transform: rotate(-180deg) translate(50%);
+}
+.vip__after img {
+  width: 40px;
+  height: 80px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .vip__container {
   position: relative;
@@ -1250,11 +1510,15 @@ html {
   margin-bottom: 5px;
 }
 .vip__par {
+  overflow: hidden;
   font-size: 19px;
   font-family: "Roboto";
   color: rgb(162, 162, 162);
   line-height: 1.64;
   text-align: left;
+}
+.vip__par-active {
+  height: auto !important;
 }
 
 .tous {
@@ -1317,6 +1581,8 @@ html {
 
 .footer {
   background: url("https://miks1na.github.io/Kalmarus456/images/futer.png");
+  background-repeat: repeat no-repeat;
+  background-color: #030610;
   padding-top: 60px;
 }
 .footer nav {
@@ -1350,4 +1616,975 @@ html {
   line-height: 1.357;
   text-align: center;
   padding-bottom: 20px;
+}
+
+.header__inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1150px) {
+  .pers__inner {
+    padding: 0 50px;
+  }
+  .pers .swiper__pers {
+    width: 100%;
+  }
+  .pers {
+    margin-top: 40px;
+  }
+  .custom ._active {
+    top: 80px;
+  }
+  .run__inner {
+    padding: 0 50px;
+  }
+  .pers .swiper-button-next-pers {
+    top: 35%;
+  }
+  .pers .swiper-button-prev-pers {
+    top: 35%;
+  }
+  .run .swiper__run {
+    width: 100%;
+  }
+  .fight {
+    padding-bottom: 0;
+  }
+  .fight__img img {
+    height: 750px;
+  }
+  .clan {
+    padding-bottom: 100px;
+  }
+  .clan__img img {
+    height: 750px;
+  }
+  .moda {
+    padding-bottom: 100px;
+  }
+  .moda {
+    background-position: 0px -42px;
+  }
+  .vip {
+    background-position: 0px -42px;
+  }
+  .clan {
+    background-position: 0px -42px;
+  }
+  .moda__img img {
+    height: 750px;
+  }
+  .vip {
+    padding-bottom: 100px;
+  }
+  .vip__img img {
+    height: 750px;
+  }
+  .loc ._active {
+    top: 120px;
+  }
+  .loc {
+    padding-bottom: 0;
+  }
+  .loc__img img {
+    height: 750px;
+  }
+  .custom {
+    padding-bottom: 70px;
+  }
+  .custom__img img {
+    height: 650px;
+  }
+  .friends {
+    padding-bottom: 0;
+  }
+  .friends__img img {
+    height: 750px;
+  }
+  .online__img img {
+    height: 750px;
+  }
+  .fight__title {
+    font-size: 50px;
+  }
+  .header__inner .header__links {
+    padding-right: 65px;
+  }
+}
+@media (max-width: 1000px) {
+  .run .run-pagination {
+    top: 454px;
+  }
+}
+@media (max-width: 900px) {
+  .footer nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    margin-bottom: 34px;
+  }
+  .pers__inner {
+    padding: 0;
+  }
+  .pers .swiper-button-next-pers {
+    display: none;
+  }
+  .pers .swiper-button-prev-pers {
+    display: none;
+  }
+  .run .swiper-button-prev-run {
+    top: 25%;
+  }
+  .run .swiper-button-next-run {
+    top: 25%;
+  }
+  .run .run-pagination {
+    top: 410px;
+  }
+  .fight {
+    background-position: 0px -67px;
+  }
+  .fight__img img {
+    height: 750px;
+  }
+  .fight__title {
+    font-size: 36px;
+  }
+  .vip {
+    background-position: 0px -67px;
+  }
+  .vip__img img {
+    height: 750px;
+  }
+  .vip__title {
+    font-size: 36px;
+  }
+  .moda {
+    background-position: 0px -67px;
+  }
+  .moda__img img {
+    height: 750px;
+  }
+  .moda__title {
+    font-size: 36px;
+  }
+  .clan {
+    background-position: 0px -67px;
+  }
+  .clan__img img {
+    height: 750px;
+  }
+  .clan__title {
+    font-size: 36px;
+  }
+  .clan {
+    padding-bottom: 20px;
+  }
+  .clan {
+    background-position: 0px -38px;
+  }
+  .loc {
+    background-position: 0px -67px;
+  }
+  .loc__img img {
+    height: 641px;
+  }
+  .loc__title {
+    font-size: 36px;
+  }
+  .custom {
+    background-position: 0px -67px;
+  }
+  .custom__img img {
+    height: 750px;
+  }
+  .custom__title {
+    font-size: 36px;
+  }
+  .friends {
+    background-position: 0px -67px;
+  }
+  .friends__img img {
+    height: 750px;
+  }
+  .friends__title {
+    font-size: 36px;
+  }
+  .online {
+    background-position: 0px -110px;
+  }
+  .online__img img {
+    height: 750px;
+  }
+  .online__title {
+    font-size: 36px;
+  }
+  .about {
+    background-position: center -777px;
+  }
+  .about__img-active {
+    margin-top: -32px;
+  }
+  .about__right {
+    padding-top: 30px;
+  }
+  .about .about__after {
+    display: block;
+  }
+  .about__text {
+    font-size: 20px;
+  }
+  .main__inner {
+    gap: 20px;
+  }
+  .main__left img {
+    width: 250px;
+    height: 250px;
+  }
+  .main__right .main__title {
+    font-size: 40px;
+    max-width: 300px;
+  }
+  .main__right .main__subtitle {
+    font-size: 25px;
+  }
+  .main__right .header__play img {
+    width: 170px;
+    height: auto;
+  }
+  .main__right .header__play {
+    width: 170px;
+    height: auto;
+  }
+  .main__right .main__icons {
+    gap: 10px;
+  }
+}
+@media (max-width: 830px) {
+  .run .run-pagination {
+    top: 367px;
+  }
+}
+@media (max-width: 750px) {
+  .run .swiper-button-prev-run {
+    display: none;
+  }
+  .run .swiper-button-next-run {
+    display: none;
+  }
+  .run__inner {
+    padding: 0;
+  }
+  .run .run-pagination {
+    top: 312px;
+  }
+  .online .online__container ._active img {
+    height: 250px;
+  }
+  .online .online__container ._active {
+    top: 153px;
+    right: 158px;
+  }
+  .fight ._active {
+    top: 40px;
+    right: 0;
+  }
+  .fight__img img {
+    height: 350px;
+  }
+  .fight__title {
+    font-size: 30px;
+  }
+  .fight__title {
+    margin-top: 23px;
+  }
+  .fight {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .fight {
+    background-position: 0px -11px;
+  }
+  .fight {
+    background-size: auto 405px;
+  }
+  .vip ._active {
+    top: 40px;
+    right: 0;
+  }
+  .vip__img img {
+    height: 350px;
+  }
+  .vip__title {
+    font-size: 30px;
+  }
+  .vip__title {
+    margin-top: 23px;
+  }
+  .vip {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .vip {
+    background-position: 0px -11px;
+  }
+  .vip {
+    background-size: auto 405px;
+  }
+  .moda ._active {
+    top: 40px;
+    right: 0;
+  }
+  .moda__img img {
+    height: 350px;
+  }
+  .moda__title {
+    font-size: 30px;
+  }
+  .moda__title {
+    margin-top: 23px;
+  }
+  .moda {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .moda {
+    background-position: 0px -11px;
+  }
+  .moda {
+    background-size: auto 405px;
+  }
+  .clan ._active {
+    top: 40px;
+    right: 0;
+  }
+  .clan__img img {
+    height: 350px;
+  }
+  .clan__title {
+    font-size: 30px;
+  }
+  .clan__title {
+    margin-top: 23px;
+  }
+  .clan {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .clan {
+    background-position: 0px -11px;
+  }
+  .clan {
+    background-size: auto 405px;
+  }
+  .loc__img img {
+    height: 350px;
+  }
+  .loc__title {
+    font-size: 30px;
+  }
+  .loc__title {
+    margin-top: 23px;
+  }
+  .loc {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .loc {
+    background-position: 0px -11px;
+  }
+  .loc {
+    background-size: auto 405px;
+  }
+  .loc ._active {
+    right: 35px;
+  }
+  .custom ._active {
+    top: 40px;
+    right: 0;
+  }
+  .custom__img img {
+    height: 350px;
+  }
+  .custom__title {
+    font-size: 30px;
+  }
+  .custom__title {
+    margin-top: 23px;
+  }
+  .custom {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .custom {
+    background-position: 0px -11px;
+  }
+  .custom {
+    background-size: auto 405px;
+  }
+  .friends ._active {
+    top: 40px;
+    right: 0;
+  }
+  .friends__img img {
+    height: 350px;
+  }
+  .friends__title {
+    font-size: 30px;
+  }
+  .friends__title {
+    margin-top: 23px;
+  }
+  .friends {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .friends {
+    background-position: 0px -11px;
+  }
+  .friends {
+    background-size: auto 405px;
+  }
+  .friends__title {
+    margin-bottom: 217px;
+  }
+  .online ._active {
+    top: 40px;
+    right: 0;
+  }
+  .online__img img {
+    height: 350px;
+  }
+  .online__title {
+    font-size: 30px;
+  }
+  .online__title {
+    margin-top: 23px;
+  }
+  .online {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .online {
+    background-position: 0px -11px;
+  }
+  .online {
+    background-size: auto 405px;
+  }
+  .about img {
+    width: 180px;
+    height: auto;
+  }
+  .about__text {
+    font-size: 19px;
+    height: 250px;
+  }
+  .header__inner .header__links {
+    padding-right: 65px;
+  }
+  .header__inner .header__logo img {
+    width: 138px;
+    height: 28px;
+  }
+  .header__inner .header__logo {
+    width: 138px;
+    height: 28px;
+    margin-left: 0px;
+  }
+  .header__flag-lang {
+    font-size: 17px;
+  }
+  .header__flag img {
+    width: 24px;
+    height: 24px;
+  }
+  .header__inner .header__links .header__play img {
+    width: 129px;
+    height: 35px;
+  }
+  .header__inner .header__links .header__play {
+    width: 129px;
+    height: 35px;
+  }
+  .header__flag {
+    top: 14px;
+  }
+  .main__inner {
+    gap: 20px;
+  }
+  .main__left img {
+    width: 160px;
+    height: 160px;
+  }
+  .main__right .main__title {
+    font-size: 30px;
+    max-width: 250px;
+  }
+  .main__right .main__subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .main__right .header__play img {
+    width: 130px;
+    height: auto;
+  }
+  .main__right .header__play {
+    width: 130px;
+    height: auto;
+  }
+  .main__right .main__icons {
+    gap: 10px;
+  }
+  .tous__par {
+    font-size: 16px;
+  }
+  .tous__links {
+    padding-left: 123px;
+  }
+  .tous h2 {
+    padding-left: 20px;
+  }
+  .tous img {
+    width: 280px;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .clan {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .custom .custom__inner {
+    padding-bottom: 0px;
+  }
+  .custom__after {
+    display: block;
+  }
+  .clan__after {
+    display: block;
+  }
+  .moda__after {
+    display: block;
+  }
+  .vip__after {
+    display: block;
+  }
+  .friends__after {
+    display: block;
+  }
+  .tous {
+    background-size: 400px auto;
+  }
+  .tous h2 {
+    padding-top: 180px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    text-align: center;
+    font-size: 40px;
+  }
+  .tous__top {
+    padding-bottom: 0px;
+  }
+  .tous__inner {
+    margin-bottom: 40px;
+  }
+  .tous__par {
+    padding: 21px 0px 0px 0px;
+    margin-left: 0px;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(162, 162, 162);
+    line-height: 1.64;
+    text-align: center;
+  }
+  .tous__links {
+    padding-left: 0;
+  }
+  .tous img {
+    width: 200px;
+    height: auto;
+  }
+  .run {
+    background-position: center -415px;
+  }
+  .run .run-pagination {
+    top: 268px;
+  }
+  .loc__after {
+    display: block;
+  }
+  .online__after {
+    display: block;
+  }
+  .fight__par {
+    height: 145px;
+  }
+  .fight__after {
+    bottom: -35px;
+  }
+  .fight__par {
+    font-size: 17px;
+  }
+  .fight__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .fight__title {
+    margin-bottom: 256px;
+  }
+  .fight {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .fight__img img {
+    height: 270px;
+  }
+  .vip__par {
+    height: 145px;
+  }
+  .vip__after {
+    bottom: -35px;
+  }
+  .vip__par {
+    font-size: 17px;
+  }
+  .vip__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .vip__title {
+    margin-bottom: 256px;
+  }
+  .vip {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .vip .vip__inner {
+    padding-bottom: 20px;
+  }
+  .vip__img img {
+    height: 270px;
+  }
+  .moda__par {
+    height: 145px;
+  }
+  .moda__after {
+    bottom: -35px;
+  }
+  .moda__par {
+    font-size: 17px;
+  }
+  .vip {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .moda .moda__inner {
+    padding-bottom: 20px;
+  }
+  .clan .clan__inner {
+    padding-bottom: 10px;
+  }
+  .moda__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .moda__title {
+    margin-bottom: 256px;
+  }
+  .moda {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .moda__img img {
+    height: 250px;
+  }
+  .moda ._active {
+    top: 68px;
+  }
+  .clan__par {
+    height: 145px;
+  }
+  .clan__after {
+    bottom: -35px;
+  }
+  .clan__par {
+    font-size: 17px;
+  }
+  .clan__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .clan__title {
+    margin-bottom: 256px;
+  }
+  .clan {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .clan__img img {
+    height: 270px;
+  }
+  .loc__img img {
+    height: 270px;
+  }
+  .loc ._active {
+    top: 50px;
+  }
+  .loc__par {
+    height: 145px;
+  }
+  .loc__after {
+    bottom: -35px;
+  }
+  .loc__par {
+    font-size: 17px;
+  }
+  .loc__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .loc__title {
+    margin-bottom: 256px;
+  }
+  .loc {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .custom__img img {
+    height: 270px;
+  }
+  .custom__par {
+    height: 145px;
+  }
+  .custom__after {
+    bottom: -35px;
+  }
+  .custom__par {
+    font-size: 17px;
+  }
+  .custom__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .custom__title {
+    font-size: 21px;
+    margin-bottom: 256px;
+  }
+  .custom__par {
+    overflow: hidden;
+  }
+  .custom {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .custom__img img {
+    height: 270px;
+  }
+  .friends__par {
+    height: 145px;
+  }
+  .friends__after {
+    bottom: -35px;
+  }
+  .friends__par {
+    font-size: 17px;
+  }
+  .friends__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .friends__title {
+    margin-bottom: 256px;
+  }
+  .friends__par {
+    overflow: hidden;
+  }
+  .friends {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .friends__img img {
+    height: 270px;
+  }
+  .online .online__container ._active img {
+    height: 170px;
+  }
+  .online .online__container ._active {
+    top: 134px;
+    right: 122px;
+  }
+  .online__par {
+    height: 145px;
+  }
+  .run {
+    padding-bottom: 30px;
+  }
+  .online .online__inner {
+    padding-bottom: 35px;
+  }
+  .online__after {
+    bottom: -35px;
+  }
+  .online__par {
+    font-size: 17px;
+    overflow: hidden;
+  }
+  .online__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .online__title {
+    margin-bottom: 256px;
+  }
+  .online {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .online__img img {
+    height: 270px;
+  }
+  .about img {
+    width: 150px;
+    height: auto;
+  }
+  .about__text {
+    font-size: 15.5px;
+    height: 200px;
+  }
+  .about__text {
+    padding-top: 17px;
+  }
+  .header__inner .header__logo img {
+    width: 81px;
+    height: 16.5px;
+  }
+  .header__inner .header__logo {
+    width: 81px;
+    height: 16.5px;
+  }
+  .header__inner .header__links .header__play img {
+    width: 86px;
+    height: 23px;
+  }
+  .header__inner .header__links .header__play {
+    width: 86px;
+    height: 23px;
+  }
+  .header__flag-lang {
+    font-size: 13px;
+  }
+  .header__flag img {
+    width: 18px;
+    height: 18px;
+  }
+  .header__flag {
+    top: 17px;
+  }
+  .header__inner {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .header__inner .header__links {
+    gap: 0px;
+  }
+  .header__inner .header__logo {
+    margin-right: 3px;
+  }
+  .main__inner {
+    gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 65px;
+  }
+  .main__left img {
+    width: 120px;
+    height: 120px;
+  }
+  .main__right .main__title {
+    font-size: 22px;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  .main__right .main__subtitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .main__right .header__play img {
+    width: 110px;
+    height: auto;
+  }
+  .main__right .header__play {
+    width: 110px;
+    height: auto;
+  }
+  .main__right .main__icons {
+    gap: 10px;
+  }
+  .main__esrb {
+    display: none;
+  }
+  .run p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .run .run-pagination {
+    top: 234px;
+  }
+  .loc__title {
+    font-size: 22px;
+  }
+  .clan__title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 400px) {
+  .run .run-pagination {
+    top: 210px;
+  }
+  .fight__title {
+    font-size: 24px;
+  }
+  .about img {
+    width: 125px;
+    height: auto;
+    margin-right: 14px;
+  }
+  .about__text {
+    font-size: 14px;
+    height: 180px;
+    padding-top: 15px;
+  }
+  .main__inner {
+    gap: 15px;
+    padding-top: 100px;
+    padding-bottom: 65px;
+  }
+  .main__left img {
+    width: 100px;
+    height: 100px;
+  }
+  .main__right .main__title {
+    font-size: 20px;
+    max-width: 140px;
+    margin-bottom: 10px;
+  }
+  .main__right .main__subtitle {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .main__right .header__play img {
+    width: 87px;
+    height: auto;
+  }
+  .main__right .header__play {
+    width: 87px;
+    height: auto;
+  }
+  .main__right .main__icons {
+    gap: 10px;
+  }
 }

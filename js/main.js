@@ -40,6 +40,70 @@ const swiper2 = new Swiper('.swiper__pers', {
   //   el: '.swiper-scrollbar',
   // },
 });
+let fightArrow = document.querySelector('.fight__after')
+let fightPar = document.querySelector('.fight__par')
+fightArrow.addEventListener('click', () => {
+  fightArrow.classList.toggle('fight__after-active')
+  fightPar.classList.toggle('fight__par-active')
+})
+let aboutArrow = document.querySelector('.about__after')
+let aboutPar = document.querySelector('.about__text')
+let aboutImg = document.querySelector('.about__right-inner img')
+aboutArrow.addEventListener('click', () => {
+  aboutArrow.classList.toggle('about__after-active')
+  aboutPar.classList.toggle('about__text-active')
+  aboutImg.classList.toggle('about__img-active')
+})
+let onlineArrow = document.querySelector('.online__after')
+let onlinePar = document.querySelector('.online__par')
+onlineArrow.addEventListener('click', () => {
+  onlineArrow.classList.toggle('online__after-active')
+  onlinePar.classList.toggle('online__par-active')
+})
+let friendsArrow = document.querySelector('.friends__after')
+let friendsPar = document.querySelector('.friends__par')
+friendsArrow.addEventListener('click', () => {
+  friendsArrow.classList.toggle('friends__after-active')
+  friendsPar.classList.toggle('friends__par-active')
+})
+let locArrow = document.querySelector('.loc__after')
+let locPar = document.querySelector('.loc__par')
+locArrow.addEventListener('click', () => {
+  locArrow.classList.toggle('loc__after-active')
+  locPar.classList.toggle('loc__par-active')
+})
+let clanArrow = document.querySelector('.clan__after')
+let clanPar = document.querySelector('.clan__par')
+clanArrow.addEventListener('click', () => {
+  clanArrow.classList.toggle('clan__after-active')
+  clanPar.classList.toggle('clan__par-active')
+})
+let modaArrow = document.querySelector('.moda__after')
+let modaPar = document.querySelector('.moda__par')
+modaArrow.addEventListener('click', () => {
+  modaArrow.classList.toggle('moda__after-active')
+  modaPar.classList.toggle('moda__par-active')
+})
+let vipArrow = document.querySelector('.vip__after')
+let vipPar = document.querySelector('.vip__par')
+vipArrow.addEventListener('click', () => {
+  vipArrow.classList.toggle('vip__after-active')
+  vipPar.classList.toggle('vip__par-active')
+})
+let customArrow = document.querySelector('.custom__after')
+let customPar = document.querySelector('.custom__par')
+customArrow.addEventListener('click', () => {
+  customArrow.classList.toggle('custom__after-active')
+  customPar.classList.toggle('custom__par-active')
+})
+let runArrows = document.querySelectorAll('.run__after')
+runArrows.forEach(runArrow => {
+  runArrow.addEventListener('click', () => {
+    runArrow.classList.toggle('run__after-active')
+    let runPar = runArrow.closest('.run__text').querySelector('.run__text p')
+    runPar.classList.toggle('run__par-active')
+  })
+})
 let play = document.querySelectorAll('.header__play');
 let logo = document.querySelector('.header__logo img')
 document.addEventListener('scroll', () => {
@@ -69,7 +133,7 @@ close.addEventListener('click', (e) => {
   countr.classList.remove('header__flag-active')
 })
 document.addEventListener('click', (e) => {
-  if(countr.classList.contains('header__flag-active') && e.target !== countr && e.target.closest(countr)) {
+  if(countr.classList.contains('header__flag-active') && e.target !== countr && !e.target.closest('.header__countries')) {
     countr.classList.remove('header__flag-active')
   }
 })

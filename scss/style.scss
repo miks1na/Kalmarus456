@@ -16,7 +16,7 @@ html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 .wrapper {
   overflow: hidden;
@@ -65,7 +65,7 @@ html {
   border-radius: 60px;
   border: 20px solid #ffffff;
   span {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 40px;
     color: #fff;
   }
@@ -95,6 +95,9 @@ html {
     opacity: 0.4;
   }
 }
+.tous__par a{
+  color: chocolate;
+}
 .header__inner {
   position: relative;
   display: flex;
@@ -121,12 +124,11 @@ html {
       align-items: center;
       margin-bottom: 10px;
       h4 {
-          font-size: 21px;
-          font-family: "Roboto";
-          color: black;
-          font-weight: bold;
-          line-height: 1.81;
-        
+        font-size: 21px;
+        font-family: "Roboto";
+        color: black;
+        font-weight: bold;
+        line-height: 1.81;
       }
       a {
         font-size: 30px;
@@ -147,10 +149,10 @@ html {
         flex-direction: row;
         gap: 15px;
         align-items: center;
-          font-size: 19.576px;
-          font-family: "Roboto";
-          color: rgb(0, 100, 138);
-          line-height: 1.941;
+        font-size: 19.576px;
+        font-family: "Roboto";
+        color: rgb(0, 100, 138);
+        line-height: 1.941;
         img {
           width: 25px;
           height: 25px;
@@ -211,10 +213,10 @@ html {
   }
 }
 .header__play-active {
-  display: flex!important;
+  display: flex !important;
 }
 .header__flag-active {
-  display: block!important;
+  display: block !important;
 }
 .main {
   position: relative;
@@ -282,7 +284,7 @@ html {
       text-shadow: -5.416px 7.188px 16px rgba(0, 0, 0, 0.42);
       margin-bottom: 20px;
       font-weight: 400;
-      max-width: 310px;
+      max-width: 320px;
       font-weight: 900;
     }
     .main__subtitle {
@@ -315,22 +317,44 @@ html {
   }
 }
 .about {
+  &__right-inner {
+  }
   background-image: url("https://miks1na.github.io/Kalmarus456/images/shutterstock_2137531191.png");
   background-repeat: no-repeat;
   background-size: 100% 970px;
   background-position: center bottom;
   box-shadow: inset 0px 0px 100px #190224;
+  .about &__after {
+    display: none;
+    width: 40px;
+    height: 80px;
+    img {
+      width: 40px;
+      height: 80px;
+      transform: rotate(-90deg);
+    }
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate(-50%);
+  }
+  &__after-active {
+    transform: rotate(-180deg) translate(50%) !important;
+  }
   &__inner {
     display: flex;
     flex-direction: row;
-    padding: 20px 0 32px 0;
+    padding: 20px 0 42px 0;
     gap: 22px;
+    position: relative;
   }
-  &__img {
-    img {
-      width: 226px;
-      height: 298px;
-    }
+  img {
+    width: 226px;
+    height: 298px;
+    float: left;
+    margin-right: 25px;
   }
   &__text {
     padding-top: 32px;
@@ -338,10 +362,32 @@ html {
     font-family: "Roboto";
     color: rgb(162, 162, 162);
     line-height: 1.64;
-    text-align: left;
+    height: 300px;
+    overflow: hidden;
+  }
+  &__text-active {
+    height: auto;
+    display: inline;
+    margin-top: 32px;
   }
 }
 .fight {
+  &__after {
+    &-active {
+      transform: rotate(-180deg) translate(50%);
+    }
+    img {
+      width: 40px;
+      height: 80px;
+      transform: rotate(-90deg);
+    }
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate(-50%);
+  }
   padding-bottom: 210px;
   position: relative;
   &__img {
@@ -350,17 +396,17 @@ html {
     right: -950px;
     transition: 1s;
   }
-  ._active{
+  ._active {
     position: absolute;
     top: 40px;
     right: -150px;
     transition: 1s;
   }
-  background-image: url('https://miks1na.github.io/Kalmarus456/images/podlozhki/fight.jpg');
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/fight.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
-  
+
   .fight &__inner {
     display: flex;
     flex-direction: column;
@@ -373,13 +419,14 @@ html {
   &__main {
     border-radius: 14px;
     background-color: rgba(0, 0, 0, 0.702);
-    padding: 21px 31px 55px 20px;
+    padding: 21px 31px 45px 20px;
     margin-left: 9px;
     max-width: 733px;
     backdrop-filter: blur(5px);
     transform: scale(0.6);
+    position: relative;
   }
-  
+
   &__title {
     display: inline;
     font-size: 60px;
@@ -387,18 +434,18 @@ html {
     color: #8de8ff;
     font-weight: bold;
     font-style: italic;
-    text-shadow:0 0 20px #8de8ff;
+    text-shadow: 0 0 20px #8de8ff;
     margin-top: 65px;
     margin-bottom: 199px;
-}
+  }
   &__subtitle {
-      font-size: 19px;
-      font-family: "Roboto";
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      line-height: 1.579;
-      text-align: left;
-      margin-bottom: 5px;
+    font-size: 19px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.579;
+    text-align: left;
+    margin-bottom: 5px;
   }
   &__par {
     font-size: 19px;
@@ -406,10 +453,31 @@ html {
     color: rgb(162, 162, 162);
     line-height: 1.64;
     text-align: left;
+    height: 320px;
+    overflow: hidden;
   }
-  
+  &__par-active {
+    height: auto !important;
+  }
 }
 .online {
+  &__after {
+    display: none;
+    &-active {
+      transform: rotate(-180deg) translate(50%);
+    }
+    img {
+      width: 40px !important;
+      height: 80px !important;
+      transform: rotate(-90deg);
+    }
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate(-50%);
+  }
   box-shadow: 0px -45px 100px 10px #051114;
   padding-bottom: 326px;
   position: relative;
@@ -422,7 +490,7 @@ html {
     right: -950px;
     transition: 1s;
   }
-  ._active{
+  ._active {
     top: 40px;
     right: -50px;
     z-index: 5;
@@ -437,11 +505,11 @@ html {
     top: 550px;
     right: 130px;
   }
-  background-image: url('https://miks1na.github.io/Kalmarus456/images/podlozhki/shariki.jpg');
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/shariki.jpg");
   background-repeat: no-repeat;
   background-position: 0px -60px;
   background-size: cover;
-  
+
   .online &__inner {
     display: flex;
     flex-direction: column;
@@ -470,18 +538,18 @@ html {
     color: #8de8ff;
     font-weight: bold;
     font-style: italic;
-    text-shadow:0 0 40px #8de8ff;
+    text-shadow: 0 0 40px #8de8ff;
     margin-top: 45px;
     margin-bottom: 199px;
-}
+  }
   &__subtitle {
-      font-size: 19px;
-      font-family: "Roboto";
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      line-height: 1.579;
-      text-align: left;
-      margin-bottom: 5px;
+    font-size: 19px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.579;
+    text-align: left;
+    margin-bottom: 5px;
   }
   &__par {
     font-size: 19px;
@@ -490,14 +558,35 @@ html {
     line-height: 1.64;
     text-align: left;
   }
-  
+  &__par-active {
+    height: auto !important;
+  }
 }
 .run {
+  &__text {
+    padding-bottom: 45px;
+  }
+  &__after {
+    &-active {
+      transform: rotate(-180deg) translate(50%);
+    }
+    img {
+      width: 40px;
+      height: 80px;
+      transform: rotate(-90deg);
+    }
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate(-50%);
+  }
   padding-bottom: 100px;
-  background: url('https://miks1na.github.io/Kalmarus456/images/Hue_Saturation\ 1.png');
+  background: url("https://miks1na.github.io/Kalmarus456/images/Hue_Saturation\ 1.png");
   background-repeat: no-repeat;
   background-position: center -250px;
-    &__inner {
+  &__inner {
     position: relative;
   }
   &__img {
@@ -519,6 +608,12 @@ html {
     color: rgb(162, 162, 162);
     line-height: 1.64;
     text-align: left;
+    height: 85px;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+  .run &__par-active {
+    height: auto;
   }
   img {
     width: 100%;
@@ -542,15 +637,20 @@ html {
   .run-pagination {
     position: absolute;
     z-index: 10;
-    top: 490px;
+    top: 500px;
     left: 50%;
+    -webkit-transform: translate(-50%);
     transform: translate(-50%);
-    width: auto;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
   }
+
   .swiper-button-prev-run {
     position: absolute;
     left: 0px;
-    top: 205px;
+    top: 28%;
     width: 40px;
     height: 80px;
     img {
@@ -558,11 +658,10 @@ html {
       height: 80px;
     }
     cursor: pointer;
-
   }
   .swiper-button-next-run {
     position: absolute;
-    top: 205px;
+    top: 28%;
     right: 0;
     transform: rotateY(180deg);
     width: 40px;
@@ -578,6 +677,23 @@ html {
   box-shadow: 0px -45px 30px 8px #121401;
   padding-bottom: 276px;
   position: relative;
+  &__after {
+    display: none;
+    &-active {
+      transform: rotate(-180deg) translate(50%);
+    }
+    img {
+      width: 40px;
+      height: 80px;
+      transform: rotate(-90deg);
+    }
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate(-50%);
+  }
   &__container {
     position: relative;
   }
@@ -587,17 +703,17 @@ html {
     right: -950px;
     transition: 1s;
   }
-  ._active{
+  ._active {
     position: absolute;
     top: 30px;
     right: -50px;
     z-index: 5;
   }
-  background-image: url('https://miks1na.github.io/Kalmarus456/images/podlozhki/castum.jpg');
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/castum.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
-  
+
   .custom &__inner {
     display: flex;
     flex-direction: column;
@@ -626,18 +742,18 @@ html {
     color: #fff;
     font-weight: bold;
     font-style: italic;
-    text-shadow:0 0 40px yellow;
+    text-shadow: 0 0 40px yellow;
     margin-top: 65px;
     margin-bottom: 155px;
-}
+  }
   &__subtitle {
-      font-size: 19px;
-      font-family: "Roboto";
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      line-height: 1.579;
-      text-align: left;
-      margin-bottom: 5px;
+    font-size: 19px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.579;
+    text-align: left;
+    margin-bottom: 5px;
   }
   &__par {
     font-size: 19px;
@@ -646,16 +762,18 @@ html {
     line-height: 1.64;
     text-align: left;
   }
-  
+  &__par-active {
+    height: auto !important;
+  }
 }
 .pers {
   padding-bottom: 70px;
-  background: url('https://miks1na.github.io/Kalmarus456/images/bg_photo_z.jpg');
+  background: url("https://miks1na.github.io/Kalmarus456/images/bg_photo_z.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0px;
   box-shadow: 0px -45px 100px 70px #01000b;
-    &__inner {
+  &__inner {
     position: relative;
   }
   &__img {
@@ -684,10 +802,11 @@ html {
   .pers-pagination {
     position: absolute;
     z-index: 10;
-    top: 470px;
-    left: 50%;
-    transform: translate(-50%);
-    width: auto;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .swiper-button-prev-pers {
     position: absolute;
@@ -700,7 +819,6 @@ html {
       height: 80px;
     }
     cursor: pointer;
-
   }
   .swiper-button-next-pers {
     position: absolute;
@@ -717,6 +835,23 @@ html {
   }
 }
 .friends {
+  &__after {
+    display: none;
+    &-active {
+      transform: rotate(-180deg) translate(50%);
+    }
+    img {
+      width: 40px;
+      height: 80px;
+      transform: rotate(-90deg);
+    }
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate(-50%);
+  }
   box-shadow: 0px -45px 30px 8px #001201;
   padding-bottom: 200px;
   position: relative;
@@ -729,17 +864,17 @@ html {
     right: -950px;
     transition: 1s;
   }
-  ._active{
+  ._active {
     position: absolute;
     top: 15px;
     right: -130px;
     z-index: 5;
   }
-  background-image: url('https://miks1na.github.io/Kalmarus456/images/podlozhki/lobby.jpg');
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/lobby.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
-  
+
   .friends &__inner {
     display: flex;
     flex-direction: column;
@@ -768,18 +903,18 @@ html {
     color: #fff;
     font-weight: bold;
     font-style: italic;
-    text-shadow:0 0 40px yellow;
+    text-shadow: 0 0 40px yellow;
     margin-top: 65px;
     margin-bottom: 80px;
-}
+  }
   &__subtitle {
-      font-size: 19px;
-      font-family: "Roboto";
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      line-height: 1.579;
-      text-align: left;
-      margin-bottom: 5px;
+    font-size: 19px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.579;
+    text-align: left;
+    margin-bottom: 5px;
   }
   &__par {
     font-size: 19px;
@@ -788,10 +923,12 @@ html {
     line-height: 1.64;
     text-align: left;
   }
-  
+  &__par-active {
+    height: auto !important;
+  }
 }
 .video {
-  background-image: url('https://miks1na.github.io/Kalmarus456/images/bg_vidos.jpg');
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/bg_vidos.jpg");
   background-repeat: repeat no-repeat;
   margin-bottom: 60px;
   &__inner {
@@ -802,9 +939,27 @@ html {
   }
 }
 .loc {
+  
   box-shadow: 0px -45px 70px 30px #220a13;
   padding-bottom: 200px;
   position: relative;
+  &__after {
+    display: none;
+    &-active {
+      transform: rotate(-180deg) translate(50%);
+    }
+    img {
+      width: 40px;
+      height: 80px;
+      transform: rotate(-90deg);
+    }
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate(-50%);
+  }
   &__container {
     position: relative;
   }
@@ -817,17 +972,17 @@ html {
       height: 920px;
     }
   }
-  ._active{
+  ._active {
     position: absolute;
     top: 10px;
     right: -150px;
     z-index: 5;
   }
-  background-image: url('https://miks1na.github.io/Kalmarus456/images/podlozhki/krovat.jpg');
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/krovat.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
-  
+
   .loc &__inner {
     display: flex;
     flex-direction: column;
@@ -856,18 +1011,18 @@ html {
     color: #ffc4f3;
     font-weight: bold;
     font-style: italic;
-    text-shadow:0 0 40px #ffc4f3;
+    text-shadow: 0 0 40px #ffc4f3;
     margin-top: 65px;
     margin-bottom: 255px;
-}
+  }
   &__subtitle {
-      font-size: 19px;
-      font-family: "Roboto";
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      line-height: 1.579;
-      text-align: left;
-      margin-bottom: 5px;
+    font-size: 19px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.579;
+    text-align: left;
+    margin-bottom: 5px;
   }
   &__par {
     font-size: 19px;
@@ -875,10 +1030,30 @@ html {
     color: rgb(162, 162, 162);
     line-height: 1.64;
     text-align: left;
+    overflow: hidden;
+    &-active{
+      height: auto!important;
+    }
   }
-  
 }
 .clan {
+  &__after {
+    display: none;
+    &-active {
+      transform: rotate(-180deg) translate(50%);
+    }
+    img {
+      width: 40px;
+      height: 80px;
+      transform: rotate(-90deg);
+    }
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate(-50%);
+  }
   box-shadow: 0px -45px 100px 50px #091d22;
   padding-bottom: 376px;
   position: relative;
@@ -891,17 +1066,17 @@ html {
     right: -950px;
     transition: 1s;
   }
-  ._active{
+  ._active {
     position: absolute;
     top: 0px;
     right: -50px;
     z-index: 5;
   }
-  background-image: url('https://miks1na.github.io/Kalmarus456/images/podlozhki/klan.jpg');
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/klan.jpg");
   background-repeat: no-repeat;
   background-position: 0px -60px;
   background-size: cover;
-  
+
   .clan &__inner {
     display: flex;
     flex-direction: column;
@@ -930,29 +1105,49 @@ html {
     color: #8de8ff;
     font-weight: bold;
     font-style: italic;
-    text-shadow:0 0 40px #8de8ff;
+    text-shadow: 0 0 40px #8de8ff;
     margin-top: 45px;
     margin-bottom: 199px;
-}
+  }
   &__subtitle {
-      font-size: 19px;
-      font-family: "Roboto";
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      line-height: 1.579;
-      text-align: left;
-      margin-bottom: 5px;
+    font-size: 19px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.579;
+    text-align: left;
+    margin-bottom: 5px;
   }
   &__par {
+    overflow: hidden;
     font-size: 19px;
     font-family: "Roboto";
     color: rgb(162, 162, 162);
     line-height: 1.64;
     text-align: left;
+    &-active {
+      height: auto!important;
+    }
   }
-  
 }
 .moda {
+  &__after {
+    display: none;
+    &-active {
+      transform: rotate(-180deg) translate(50%);
+    }
+    img {
+      width: 40px;
+      height: 80px;
+      transform: rotate(-90deg);
+    }
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate(-50%);
+  }
   padding-bottom: 300px;
   position: relative;
   &__container {
@@ -964,17 +1159,17 @@ html {
     right: -950px;
     transition: 1s;
   }
-  ._active{
+  ._active {
     position: absolute;
     top: 40px;
     right: -160px;
     z-index: 5;
   }
-  background-image: url('https://miks1na.github.io/Kalmarus456/images/podlozhki/magaz.jpg');
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/magaz.jpg");
   background-repeat: no-repeat;
   background-position: 0px -80px;
   background-size: cover;
-  
+
   .moda &__inner {
     display: flex;
     flex-direction: column;
@@ -1003,29 +1198,49 @@ html {
     color: #8de8ff;
     font-weight: bold;
     font-style: italic;
-    text-shadow:0 0 40px #8de8ff;
+    text-shadow: 0 0 40px #8de8ff;
     margin-top: 45px;
     margin-bottom: 229px;
-}
+  }
   &__subtitle {
-      font-size: 19px;
-      font-family: "Roboto";
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      line-height: 1.579;
-      text-align: left;
-      margin-bottom: 5px;
+    font-size: 19px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.579;
+    text-align: left;
+    margin-bottom: 5px;
   }
   &__par {
+    overflow: hidden;
     font-size: 19px;
     font-family: "Roboto";
     color: rgb(162, 162, 162);
     line-height: 1.64;
     text-align: left;
+    &-active {
+      height: auto!important;
+    }
   }
-  
 }
 .vip {
+  &__after {
+    display: none;
+    &-active {
+      transform: rotate(-180deg) translate(50%);
+    }
+    img {
+      width: 40px;
+      height: 80px;
+      transform: rotate(-90deg);
+    }
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate(-50%);
+  }
   box-shadow: 0px -85px 50px 50px #2e1b03;
   padding-bottom: 270px;
   position: relative;
@@ -1038,17 +1253,17 @@ html {
     right: -950px;
     transition: 1s;
   }
-  ._active{
+  ._active {
     position: absolute;
     top: 60px;
     right: -160px;
     z-index: 5;
   }
-  background-image: url('https://miks1na.github.io/Kalmarus456/images/podlozhki/vip.jpg');
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/vip.jpg");
   background-repeat: no-repeat;
   background-position: 0px -100px;
   background-size: cover;
-  
+
   .vip &__inner {
     display: flex;
     flex-direction: column;
@@ -1077,33 +1292,36 @@ html {
     color: yellow;
     font-weight: bold;
     font-style: italic;
-    text-shadow:0 0 40px yellow;
+    text-shadow: 0 0 40px yellow;
     margin-top: 45px;
     margin-bottom: 229px;
-}
+  }
   &__subtitle {
-      font-size: 19px;
-      font-family: "Roboto";
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      line-height: 1.579;
-      text-align: left;
-      margin-bottom: 5px;
+    font-size: 19px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.579;
+    text-align: left;
+    margin-bottom: 5px;
   }
   &__par {
+    overflow: hidden;
     font-size: 19px;
     font-family: "Roboto";
     color: rgb(162, 162, 162);
     line-height: 1.64;
     text-align: left;
+    &-active {
+      height: auto!important;
+    }
   }
-  
 }
 .tous {
   &__inner {
     margin-bottom: 80px;
   }
-  background: url('https://miks1na.github.io/Kalmarus456/images/kukla_k_nam.png');
+  background: url("https://miks1na.github.io/Kalmarus456/images/kukla_k_nam.png");
   background-repeat: no-repeat;
   background-position: center 0;
   &__top {
@@ -1116,12 +1334,12 @@ html {
     color: yellow;
     font-weight: bold;
     font-style: italic;
-    text-shadow:0 0 40px yellow;
+    text-shadow: 0 0 40px yellow;
     padding-top: 90px;
     margin-bottom: 85px;
     padding-left: 170px;
   }
-  img{
+  img {
     width: 350px;
     height: 94px;
   }
@@ -1149,7 +1367,9 @@ html {
   }
 }
 .footer {
-  background: url('https://miks1na.github.io/Kalmarus456/images/futer.png');
+  background: url("https://miks1na.github.io/Kalmarus456/images/futer.png");
+  background-repeat: repeat no-repeat;
+  background-color: #030610;
   padding-top: 60px;
   nav {
     display: flex;
@@ -1167,12 +1387,981 @@ html {
     line-height: 1;
   }
   &__bottom {
-      font-size: 15px;
-      font-family: "Myriad Pro";
-      color: rgba(105, 105, 105, 0.902);
-      line-height: 1.357;
-      text-align: center;
-      padding-bottom: 20px;
+    font-size: 15px;
+    font-family: "Myriad Pro";
+    color: rgba(105, 105, 105, 0.902);
+    line-height: 1.357;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+.header__inner {
+  align-items: center;
+}
+@media (max-width: 1150px) {
+.pers__inner {
+    padding: 0 50px;
+}
+.pers .swiper__pers {
+    width: 100%;
+}
+.pers {
+    margin-top: 40px;
+}
+  .custom ._active {
+    top: 80px;
+  }
+  .run__inner {
+    padding: 0 50px;
+  }
+  .pers .swiper-button-next-pers {
+    top: 35%;
+}
+.pers .swiper-button-prev-pers {
+    top: 35%;
+}
+  .run .swiper__run {
+    width: 100%;
+  }
+
+  .fight {
+    padding-bottom: 0;
+  }
+  .fight__img img {
+    height: 750px;
+  }
+  .clan {
+    padding-bottom: 100px;
+  }
+  .clan__img img {
+    height: 750px;
+  }
+  .moda {
+    padding-bottom: 100px;
+  }
+  .moda {
+    background-position: 0px -42px;
+}
+  .vip {
+    background-position: 0px -42px;
+}
+  .clan {
+    background-position: 0px -42px;
+}
+  .moda__img img {
+    height: 750px;
+  }
+  .vip {
+    padding-bottom: 100px;
+  }
+  .vip__img img {
+    height: 750px;
+  }
+  .loc ._active {
+    top: 120px;
+}
+  .loc {
+    padding-bottom: 0;
+  }
+  .loc__img img {
+    height: 750px;
+  }
+  .custom {
+    padding-bottom: 70px;
+  }
+  .custom__img img {
+    height: 650px;
+  }
+  .friends {
+    padding-bottom: 0;
+  }
+  .friends__img img {
+    height: 750px;
+  }
+  .online__img img {
+    height: 750px;
+  }
+  .fight__title {
+    font-size: 50px;
+  }
+  .header__inner .header__links {
+    padding-right: 65px;
+  }
+}
+@media (max-width: 1000px) {
+  .run .run-pagination {
+    top: 454px;
   }
 }
 
+@media (max-width: 900px) {
+.footer nav {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 34px;
+}
+.pers__inner {
+    padding: 0;
+}
+.pers .swiper-button-next-pers {
+    display: none;
+}
+.pers .swiper-button-prev-pers {
+    display: none;
+}
+  .run .swiper-button-prev-run {
+    top: 25%;
+  }
+  .run .swiper-button-next-run {
+    top: 25%;
+  }
+  .run .run-pagination {
+    top: 410px;
+  }
+  .fight {
+    background-position: 0px -67px;
+  }
+  .fight__img img {
+    height: 750px;
+  }
+  .fight__title {
+    font-size: 36px;
+  }
+  .vip {
+    background-position: 0px -67px;
+  }
+  .vip__img img {
+    height: 750px;
+  }
+  .vip__title {
+    font-size: 36px;
+  }
+  .moda {
+    background-position: 0px -67px;
+  }
+  .moda__img img {
+    height: 750px;
+  }
+  .moda__title {
+    font-size: 36px;
+  }
+  .clan {
+    background-position: 0px -67px;
+  }
+  .clan__img img {
+    height: 750px;
+  }
+  .clan__title {
+    font-size: 36px;
+  }
+  .clan {
+    padding-bottom: 20px;
+  }
+  .clan {
+    background-position: 0px -38px;
+}
+  .loc {
+    background-position: 0px -67px;
+  }
+  .loc__img img {
+    height: 641px;
+}
+  .loc__title {
+    font-size: 36px;
+  }
+  .custom {
+    background-position: 0px -67px;
+  }
+  .custom__img img {
+    height: 750px;
+  }
+  .custom__title {
+    font-size: 36px;
+  }
+  .friends {
+    background-position: 0px -67px;
+  }
+  .friends__img img {
+    height: 750px;
+  }
+  .friends__title {
+    font-size: 36px;
+  }
+  .online {
+    background-position: 0px -110px;
+  }
+  .online__img img {
+    height: 750px;
+  }
+  .online__title {
+    font-size: 36px;
+  }
+  .about {
+    background-position: center -777px;
+    &__img-active {
+      margin-top: -32px;
+    }
+  }
+  .about__right {
+    padding-top: 30px;
+  }
+  .about .about__after {
+    display: block;
+  }
+  .about__text {
+    font-size: 20px;
+  }
+  .main__inner {
+    gap: 20px;
+  }
+  .main__left img {
+    width: 250px;
+    height: 250px;
+  }
+  .main__right .main__title {
+    font-size: 40px;
+    max-width: 300px;
+  }
+  .main__right .main__subtitle {
+    font-size: 25px;
+  }
+  .main__right .header__play img {
+    width: 170px;
+    height: auto;
+  }
+  .main__right .header__play {
+    width: 170px;
+    height: auto;
+  }
+  .main__right .main__icons {
+    gap: 10px;
+  }
+}
+@media (max-width: 830px) {
+  .run .run-pagination {
+    top: 367px;
+  }
+}
+@media (max-width: 750px) {
+  .run .swiper-button-prev-run {
+    display: none;
+  }
+  .run .swiper-button-next-run {
+    display: none;
+  }
+  .run__inner {
+    padding: 0;
+  }
+  .run .run-pagination {
+    top: 312px;
+  }
+  .online .online__container ._active img {
+    height: 250px;
+  }
+  .online .online__container ._active {
+    top: 153px;
+    right: 158px;
+  }
+  .fight ._active {
+    top: 40px;
+    right: 0;
+  }
+  .fight__img img {
+    height: 350px;
+  }
+  .fight__title {
+    font-size: 30px;
+  }
+  .fight__title {
+    margin-top: 23px;
+  }
+  .fight {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .fight {
+    background-position: 0px -11px;
+  }
+  .fight {
+    background-size: auto 405px;
+  }
+  .vip ._active {
+    top: 40px;
+    right: 0;
+  }
+  .vip__img img {
+    height: 350px;
+  }
+  .vip__title {
+    font-size: 30px;
+  }
+  .vip__title {
+    margin-top: 23px;
+  }
+  .vip {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .vip {
+    background-position: 0px -11px;
+  }
+  .vip {
+    background-size: auto 405px;
+  }
+  .moda ._active {
+    top: 40px;
+    right: 0;
+  }
+  .moda__img img {
+    height: 350px;
+  }
+  .moda__title {
+    font-size: 30px;
+  }
+  .moda__title {
+    margin-top: 23px;
+  }
+  .moda {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .moda {
+    background-position: 0px -11px;
+  }
+  .moda {
+    background-size: auto 405px;
+  }
+  .clan ._active {
+    top: 40px;
+    right: 0;
+  }
+  .clan__img img {
+    height: 350px;
+  }
+  .clan__title {
+    font-size: 30px;
+  }
+  .clan__title {
+    margin-top: 23px;
+  }
+  .clan {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .clan {
+    background-position: 0px -11px;
+  }
+  .clan {
+    background-size: auto 405px;
+  }
+  .loc__img img {
+    height: 350px;
+  }
+  .loc__title {
+    font-size: 30px;
+  }
+  .loc__title {
+    margin-top: 23px;
+  }
+  .loc {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .loc {
+    background-position: 0px -11px;
+  }
+  .loc {
+    background-size: auto 405px;
+  }
+  .loc ._active {
+    right: 35px;
+}
+  .custom ._active {
+    top: 40px;
+    right: 0;
+  }
+  .custom__img img {
+    height: 350px;
+  }
+  .custom__title {
+    font-size: 30px;
+  }
+  .custom__title {
+    margin-top: 23px;
+  }
+  .custom {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .custom {
+    background-position: 0px -11px;
+  }
+  .custom {
+    background-size: auto 405px;
+  }
+  .friends ._active {
+    top: 40px;
+    right: 0;
+  }
+  .friends__img img {
+    height: 350px;
+  }
+  .friends__title {
+    font-size: 30px;
+  }
+  .friends__title {
+    margin-top: 23px;
+  }
+  .friends {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .friends {
+    background-position: 0px -11px;
+  }
+  .friends {
+    background-size: auto 405px;
+  }
+  .friends__title {
+    margin-bottom: 217px;
+  }
+  .online ._active {
+    top: 40px;
+    right: 0;
+  }
+  .online__img img {
+    height: 350px;
+  }
+  .online__title {
+    font-size: 30px;
+  }
+  .online__title {
+    margin-top: 23px;
+  }
+  .online {
+    padding-bottom: 0;
+    background-position: 0px -8px;
+  }
+  .online {
+    background-position: 0px -11px;
+  }
+  .online {
+    background-size: auto 405px;
+  }
+  .about img {
+    width: 180px;
+    height: auto;
+  }
+  .about__text {
+    font-size: 19px;
+    height: 250px;
+  }
+  .header__inner .header__links {
+    padding-right: 65px;
+  }
+  .header__inner .header__logo img {
+    width: 138px;
+    height: 28px;
+  }
+  .header__inner .header__logo {
+    width: 138px;
+    height: 28px;
+    margin-left: 0px;
+  }
+  .header__flag-lang {
+    font-size: 17px;
+  }
+  .header__flag img {
+    width: 24px;
+    height: 24px;
+  }
+  .header__inner .header__links .header__play img {
+    width: 129px;
+    height: 35px;
+  }
+  .header__inner .header__links .header__play {
+    width: 129px;
+    height: 35px;
+  }
+  .header__flag {
+    top: 14px;
+  }
+  .main__inner {
+    gap: 20px;
+  }
+  .main__left img {
+    width: 160px;
+    height: 160px;
+  }
+  .main__right .main__title {
+    font-size: 30px;
+    max-width: 250px;
+  }
+  .main__right .main__subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .main__right .header__play img {
+    width: 130px;
+    height: auto;
+  }
+  .main__right .header__play {
+    width: 130px;
+    height: auto;
+  }
+  .main__right .main__icons {
+    gap: 10px;
+  }
+  .tous__par {
+    font-size: 16px;
+}
+.tous__links {
+    padding-left: 123px;
+}
+.tous h2 {
+    padding-left: 20px;
+}
+.tous img {
+    width: 280px;
+    height: auto;
+}
+}
+@media (max-width: 500px) {
+
+.clan {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.custom .custom__inner {
+  padding-bottom: 0px; 
+}
+  .custom__after {
+    display: block;
+    }
+  .clan__after {
+    display: block;
+    }
+  .moda__after {
+    display: block;
+    }
+  .vip__after {
+    display: block;
+    }
+  .friends__after {
+    display: block;
+  }
+  .tous {
+    background-size: 400px auto;
+}
+.tous h2 {
+  padding-top: 180px;
+  margin-bottom: 20px;
+  padding-left: 0;
+  text-align: center;
+  font-size: 40px;
+}
+.tous__top {
+  padding-bottom: 0px;
+}
+.tous__inner {
+    margin-bottom: 40px;
+}
+.tous__par {
+  padding: 21px 0px 0px 0px;
+  margin-left: 0px;
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(162, 162, 162);
+  line-height: 1.64;
+  text-align: center;
+}
+.tous__links {
+  padding-left: 0; 
+}
+.tous img {
+  width: 200px;
+  height: auto;
+}
+
+  .run {
+    background-position: center -415px;
+  }
+  .run .run-pagination {
+    top: 268px;
+  }
+  .loc__after {
+    display: block;
+}
+  .online__after {
+    display: block;
+  }
+  .fight__par {
+    height: 145px;
+  }
+  .fight__after {
+    bottom: -35px;
+  }
+  .fight__par {
+    font-size: 17px;
+  }
+  .fight__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .fight__title {
+    margin-bottom: 256px;
+  }
+  .fight {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .fight__img img {
+    height: 270px;
+}
+  .vip__par {
+    height: 145px;
+  }
+  .vip__after {
+    bottom: -35px;
+  }
+  .vip__par {
+    font-size: 17px;
+  }
+  .vip__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .vip__title {
+    margin-bottom: 256px;
+  }
+  .vip {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .vip .vip__inner {
+    padding-bottom: 20px;
+}
+  .vip__img img {
+    height: 270px;
+}
+  .moda__par {
+    height: 145px;
+  }
+  .moda__after {
+    bottom: -35px;
+  }
+  .moda__par {
+    font-size: 17px;
+  }
+  .vip {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.moda .moda__inner {
+    padding-bottom: 20px;
+}
+  .clan .clan__inner {
+    padding-bottom: 10px;
+}
+  .moda__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .moda__title {
+    margin-bottom: 256px;
+  }
+  .moda {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .moda__img img {
+    height: 250px;
+}
+.moda ._active {
+    top: 68px;
+}
+  .clan__par {
+    height: 145px;
+  }
+  .clan__after {
+    bottom: -35px;
+  }
+  .clan__par {
+    font-size: 17px;
+  }
+  .clan__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .clan__title {
+    margin-bottom: 256px;
+  }
+  .clan {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .clan__img img {
+    height: 270px;
+}
+  .loc__img img {
+    height: 270px;
+}
+.loc ._active {
+    top: 50px;
+}
+  .loc__par {
+    height: 145px;
+  }
+  .loc__after {
+    bottom: -35px;
+  }
+  .loc__par {
+    font-size: 17px;
+  }
+  .loc__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .loc__title {
+    margin-bottom: 256px;
+  }
+  .loc {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .custom__img img {
+    height: 270px;
+  }
+  .custom__par {
+    height: 145px;
+  }
+  .custom__after {
+    bottom: -35px;
+  }
+  .custom__par {
+    font-size: 17px;
+  }
+  .custom__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .custom__title {
+    font-size: 21px;
+    margin-bottom: 256px;
+  }
+  .custom__par {
+    overflow: hidden;
+  }
+  .custom {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .custom__img img {
+    height: 270px;
+  }
+  .friends__par {
+    height: 145px;
+  }
+  .friends__after {
+    bottom: -35px;
+  }
+  .friends__par {
+    font-size: 17px;
+  }
+  .friends__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .friends__title {
+    margin-bottom: 256px;
+  }
+  .friends__par {
+    overflow: hidden;
+  }
+  .friends {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .friends__img img {
+    height: 270px;
+  }
+  .online .online__container ._active img {
+    height: 170px;
+  }
+  .online .online__container ._active {
+    top: 134px;
+    right: 122px;
+  }
+  .online__par {
+    height: 145px;
+  }
+  .run {
+    padding-bottom: 30px;
+}
+  .online .online__inner {
+    padding-bottom: 35px;
+  }
+  .online__after {
+    bottom: -35px;
+  }
+  .online__par {
+    font-size: 17px;
+    overflow: hidden;
+  }
+  .online__main {
+    padding: 21px 5px 15px 5px;
+    margin-left: 0px;
+  }
+  .online__title {
+    margin-bottom: 256px;
+  }
+  .online {
+    background-size: auto 300px;
+    background-position: 0px 1px;
+  }
+  .online__img img {
+    height: 270px;
+  }
+  .about img {
+    width: 150px;
+    height: auto;
+  }
+  .about__text {
+    font-size: 15.5px;
+    height: 200px;
+  }
+  .about__text {
+    padding-top: 17px;
+  }
+  .header__inner .header__logo img {
+    width: 81px;
+    height: 16.5px;
+  }
+  .header__inner .header__logo {
+    width: 81px;
+    height: 16.5px;
+  }
+  .header__inner .header__links .header__play img {
+    width: 86px;
+    height: 23px;
+  }
+  .header__inner .header__links .header__play {
+    width: 86px;
+    height: 23px;
+  }
+  .header__flag-lang {
+    font-size: 13px;
+  }
+  .header__flag img {
+    width: 18px;
+    height: 18px;
+  }
+  .header__flag {
+    top: 17px;
+  }
+  .header__inner {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .header__inner .header__links {
+    gap: 0px;
+  }
+  .header__inner .header__logo {
+    margin-right: 3px;
+  }
+
+  .main__inner {
+    gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 65px;
+  }
+  .main__left img {
+    width: 120px;
+    height: 120px;
+  }
+  .main__right .main__title {
+    font-size: 22px;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  .main__right .main__subtitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .main__right .header__play img {
+    width: 110px;
+    height: auto;
+  }
+  .main__right .header__play {
+    width: 110px;
+    height: auto;
+  }
+  .main__right .main__icons {
+    gap: 10px;
+  }
+  .main__esrb {
+    display: none;
+  }
+
+  .run p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .run .run-pagination {
+    top: 234px;
+  }
+  .loc__title {
+    font-size: 22px;
+}
+.clan__title {
+    font-size: 22px;
+}
+}
+@media (max-width: 400px) {
+  .run .run-pagination {
+    top: 210px;
+  }
+  .fight__title {
+    font-size: 24px;
+  }
+  .about img {
+    width: 125px;
+    height: auto;
+    margin-right: 14px;
+  }
+  .about__text {
+    font-size: 14px;
+    height: 180px;
+    padding-top: 15px;
+  }
+  .main__inner {
+    gap: 15px;
+    padding-top: 100px;
+    padding-bottom: 65px;
+  }
+  .main__left img {
+    width: 100px;
+    height: 100px;
+  }
+  .main__right .main__title {
+    font-size: 20px;
+    max-width: 140px;
+    margin-bottom: 10px;
+  }
+  .main__right .main__subtitle {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .main__right .header__play img {
+    width: 87px;
+    height: auto;
+  }
+  .main__right .header__play {
+    width: 87px;
+    height: auto;
+  }
+  .main__right .main__icons {
+    gap: 10px;
+  }
+}
