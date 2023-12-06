@@ -95,7 +95,7 @@ html {
     opacity: 0.4;
   }
 }
-.tous__par a{
+.tous__par a {
   color: chocolate;
 }
 .header__inner {
@@ -321,7 +321,6 @@ html {
   background-repeat: no-repeat;
   background-size: 100% 970px;
   background-position: center bottom;
-  box-shadow: inset 0px 0px 100px #190224;
   .about &__after {
     display: none;
     width: 40px;
@@ -402,7 +401,7 @@ html {
   }
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/fight2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -30px;
+  background-position: 0px 0px;
   background-size: cover 700px;
 
   .fight &__inner {
@@ -433,7 +432,7 @@ html {
     font-weight: bold;
     font-style: italic;
     text-shadow: 0 0 20px #8de8ff;
-    margin-top: 65px;
+    margin-top: 110px;
     margin-bottom: 199px;
   }
   &__subtitle {
@@ -476,7 +475,6 @@ html {
     cursor: pointer;
     transform: translate(-50%);
   }
-  box-shadow: 0px -45px 100px 10px #051114;
   padding-bottom: 326px;
   position: relative;
   &__container {
@@ -487,15 +485,15 @@ html {
     top: 40px;
     right: -950px;
     transition: 1s;
+    z-index: 10;
   }
   ._active {
     top: 40px;
     right: -50px;
-    z-index: 5;
   }
   &__img2 {
     position: absolute;
-    top: 40px;
+    top: 550px;
     right: -950px;
     transition: 2s;
   }
@@ -505,7 +503,7 @@ html {
   }
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/shariki2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -60px;
+  background-position: 0px 0px;
   background-size: cover;
 
   .online &__inner {
@@ -537,8 +535,8 @@ html {
     font-weight: bold;
     font-style: italic;
     text-shadow: 0 0 40px #8de8ff;
-    margin-top: 45px;
-    margin-bottom: 199px;
+    margin-top: 135px;
+    margin-bottom: 170px;
   }
   &__subtitle {
     font-size: 19px;
@@ -580,7 +578,7 @@ html {
     cursor: pointer;
     transform: translate(-50%);
   }
-  padding-bottom: 100px;
+  padding-bottom: 0px;
   background: url("https://miks1na.github.io/Kalmarus456/images/Hue_Saturation\ 1.png");
   background-repeat: no-repeat;
   background-position: center -250px;
@@ -672,7 +670,6 @@ html {
   }
 }
 .custom {
-  box-shadow: 0px -45px 30px 8px #121401;
   padding-bottom: 276px;
   position: relative;
   &__after {
@@ -709,7 +706,7 @@ html {
   }
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/castum2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -30px;
+  background-position: 0px 0px;
   background-size: cover 700px;
 
   .custom &__inner {
@@ -741,7 +738,7 @@ html {
     font-weight: bold;
     font-style: italic;
     text-shadow: 0 0 40px yellow;
-    margin-top: 65px;
+    margin-top: 105px;
     margin-bottom: 155px;
   }
   &__subtitle {
@@ -770,7 +767,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0px;
-  box-shadow: 0px -45px 100px 70px #01000b;
   &__inner {
     position: relative;
   }
@@ -850,7 +846,6 @@ html {
     cursor: pointer;
     transform: translate(-50%);
   }
-  box-shadow: 0px -45px 30px 8px #001201;
   padding-bottom: 200px;
   position: relative;
   &__container {
@@ -870,7 +865,7 @@ html {
   }
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/lobby2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -30px;
+  background-position: 0px 0px;
   background-size: cover 700px;
 
   .friends &__inner {
@@ -902,7 +897,7 @@ html {
     font-weight: bold;
     font-style: italic;
     text-shadow: 0 0 40px yellow;
-    margin-top: 65px;
+    margin-top: 95px;
     margin-bottom: 80px;
   }
   &__subtitle {
@@ -937,8 +932,6 @@ html {
   }
 }
 .loc {
-  
-  box-shadow: 0px -45px 70px 30px #220a13;
   padding-bottom: 200px;
   position: relative;
   &__after {
@@ -978,7 +971,7 @@ html {
   }
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/krovat2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -30px;
+  background-position: 0px 0px;
   background-size: cover 700px;
 
   .loc &__inner {
@@ -1010,7 +1003,7 @@ html {
     font-weight: bold;
     font-style: italic;
     text-shadow: 0 0 40px #ffc4f3;
-    margin-top: 65px;
+    margin-top: 95px;
     margin-bottom: 255px;
   }
   &__subtitle {
@@ -1029,8 +1022,8 @@ html {
     line-height: 1.64;
     text-align: left;
     overflow: hidden;
-    &-active{
-      height: auto!important;
+    &-active {
+      height: auto !important;
     }
   }
 }
@@ -1052,7 +1045,6 @@ html {
     cursor: pointer;
     transform: translate(-50%);
   }
-  box-shadow: 0px -45px 100px 50px #091d22;
   padding-bottom: 376px;
   position: relative;
   &__container {
@@ -1072,7 +1064,7 @@ html {
   }
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/klan2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -60px;
+  background-position: 0px 0px;
   background-size: cover;
 
   .clan &__inner {
@@ -1104,8 +1096,8 @@ html {
     font-weight: bold;
     font-style: italic;
     text-shadow: 0 0 40px #8de8ff;
-    margin-top: 45px;
-    margin-bottom: 199px;
+    margin-top: 140px;
+    margin-bottom: 160px;
   }
   &__subtitle {
     font-size: 19px;
@@ -1124,7 +1116,7 @@ html {
     line-height: 1.64;
     text-align: left;
     &-active {
-      height: auto!important;
+      height: auto !important;
     }
   }
 }
@@ -1165,7 +1157,7 @@ html {
   }
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/magaz2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -80px;
+  background-position: 0px 0px;
   background-size: cover;
 
   .moda &__inner {
@@ -1197,8 +1189,8 @@ html {
     font-weight: bold;
     font-style: italic;
     text-shadow: 0 0 40px #8de8ff;
-    margin-top: 45px;
-    margin-bottom: 229px;
+    margin-top: 130px;
+    margin-bottom: 150px;
   }
   &__subtitle {
     font-size: 19px;
@@ -1217,7 +1209,7 @@ html {
     line-height: 1.64;
     text-align: left;
     &-active {
-      height: auto!important;
+      height: auto !important;
     }
   }
 }
@@ -1239,7 +1231,6 @@ html {
     cursor: pointer;
     transform: translate(-50%);
   }
-  box-shadow: 0px -85px 50px 50px #2e1b03;
   padding-bottom: 270px;
   position: relative;
   &__container {
@@ -1259,7 +1250,7 @@ html {
   }
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/vip2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -100px;
+  background-position: 0px 0px;
   background-size: cover;
 
   .vip &__inner {
@@ -1291,8 +1282,8 @@ html {
     font-weight: bold;
     font-style: italic;
     text-shadow: 0 0 40px yellow;
-    margin-top: 45px;
-    margin-bottom: 229px;
+    margin-top: 130px;
+    margin-bottom: 160px;
   }
   &__subtitle {
     font-size: 19px;
@@ -1311,7 +1302,7 @@ html {
     line-height: 1.64;
     text-align: left;
     &-active {
-      height: auto!important;
+      height: auto !important;
     }
   }
 }
@@ -1397,15 +1388,15 @@ html {
   align-items: center;
 }
 @media (max-width: 1150px) {
-.pers__inner {
+  .pers__inner {
     padding: 0 50px;
-}
-.pers .swiper__pers {
+  }
+  .pers .swiper__pers {
     width: 100%;
-}
-.pers {
+  }
+  .pers {
     margin-top: 40px;
-}
+  }
   .custom ._active {
     top: 80px;
   }
@@ -1414,10 +1405,10 @@ html {
   }
   .pers .swiper-button-next-pers {
     top: 35%;
-}
-.pers .swiper-button-prev-pers {
+  }
+  .pers .swiper-button-prev-pers {
     top: 35%;
-}
+  }
   .run .swiper__run {
     width: 100%;
   }
@@ -1439,13 +1430,13 @@ html {
   }
   .moda {
     background-position: 0px -42px;
-}
+  }
   .vip {
     background-position: 0px -42px;
-}
+  }
   .clan {
     background-position: 0px -42px;
-}
+  }
   .moda__img img {
     height: 750px;
   }
@@ -1457,7 +1448,7 @@ html {
   }
   .loc ._active {
     top: 120px;
-}
+  }
   .loc {
     padding-bottom: 0;
   }
@@ -1493,20 +1484,20 @@ html {
 }
 
 @media (max-width: 900px) {
-.footer nav {
+  .footer nav {
     flex-direction: column;
     gap: 15px;
     margin-bottom: 34px;
-}
-.pers__inner {
+  }
+  .pers__inner {
     padding: 0;
-}
-.pers .swiper-button-next-pers {
+  }
+  .pers .swiper-button-next-pers {
     display: none;
-}
-.pers .swiper-button-prev-pers {
+  }
+  .pers .swiper-button-prev-pers {
     display: none;
-}
+  }
   .run .swiper-button-prev-run {
     top: 25%;
   }
@@ -1557,13 +1548,13 @@ html {
   }
   .clan {
     background-position: 0px -38px;
-}
+  }
   .loc {
     background-position: 0px -67px;
   }
   .loc__img img {
     height: 641px;
-}
+  }
   .loc__title {
     font-size: 36px;
   }
@@ -1773,7 +1764,7 @@ html {
   }
   .loc ._active {
     right: 35px;
-}
+  }
   .custom ._active {
     top: 40px;
     right: 0;
@@ -1912,76 +1903,82 @@ html {
   }
   .tous__par {
     font-size: 16px;
-}
-.tous__links {
+  }
+  .tous__links {
     padding-left: 123px;
-}
-.tous h2 {
+  }
+  .tous h2 {
     padding-left: 20px;
-}
-.tous img {
+  }
+  .tous img {
     width: 280px;
     height: auto;
-}
+  }
 }
 @media (max-width: 500px) {
-
-.clan {
+  .video {
+    background-size: auto 100%;
+    margin-bottom: 30px;
+  }
+  .online__img2 {
+    top: 134px;
+  }
+  .clan {
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.custom .custom__inner {
-  padding-bottom: 0px; 
-}
+  }
+  .custom .custom__inner {
+    padding-bottom: 0px;
+  }
   .custom__after {
     display: block;
-    }
+  }
   .clan__after {
     display: block;
-    }
+  }
   .moda__after {
     display: block;
-    }
+  }
   .vip__after {
     display: block;
-    }
+  }
   .friends__after {
     display: block;
   }
   .tous {
     background-size: 950px auto;
-}
-.tous h2 {
-  padding-top: 60px;
-  margin-bottom: 80px;
-  padding-left: 0;
-  text-align: center;
-  font-size: 40px;
-  padding-left: 25%;
-}
-.tous__top {
-  padding-bottom: 0px;
-}
-.tous__inner {
+  }
+  .tous h2 {
+    padding-top: 60px;
+    margin-bottom: 80px;
+    padding-left: 0;
+    text-align: center;
+    font-size: 40px;
+    padding-left: 25%;
+  }
+  .tous__top {
+    padding-bottom: 0px;
+  }
+  .tous__inner {
     margin-bottom: 40px;
-}
-.tous__par {
-  padding: 21px 15px 0px 15px;
-  margin-left: 0px;
-  font-size: 14px;
-  font-family: "Roboto";
-  color: rgb(162, 162, 162);
-  line-height: 1.64;
-  text-align: center;
-  margin-top: 100px;
-}
-.tous__links {
-  padding-left: 35%; 
-}
-.tous img {
-  width: 200px;
-  height: auto;
-}
+  }
+  .tous__par {
+    padding: 21px 15px 0px 15px;
+    margin-left: 0px;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(162, 162, 162);
+    line-height: 1.64;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .tous__links {
+    padding-left: 35%;
+  }
+  .tous img {
+    width: 200px;
+    height: auto;
+  }
 
   .run {
     background-position: center -415px;
@@ -1991,7 +1988,7 @@ html {
   }
   .loc__after {
     display: block;
-}
+  }
   .online__after {
     display: block;
   }
@@ -2017,7 +2014,7 @@ html {
   }
   .fight__img img {
     height: 270px;
-}
+  }
   .vip__par {
     height: 145px;
   }
@@ -2040,10 +2037,10 @@ html {
   }
   .vip .vip__inner {
     padding-bottom: 20px;
-}
+  }
   .vip__img img {
     height: 270px;
-}
+  }
   .moda__par {
     height: 145px;
   }
@@ -2056,13 +2053,13 @@ html {
   .vip {
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.moda .moda__inner {
+  }
+  .moda .moda__inner {
     padding-bottom: 20px;
-}
+  }
   .clan .clan__inner {
     padding-bottom: 10px;
-}
+  }
   .moda__main {
     padding: 21px 5px 15px 5px;
     margin-left: 0px;
@@ -2076,10 +2073,10 @@ html {
   }
   .moda__img img {
     height: 250px;
-}
-.moda ._active {
+  }
+  .moda ._active {
     top: 68px;
-}
+  }
   .clan__par {
     height: 145px;
   }
@@ -2102,13 +2099,13 @@ html {
   }
   .clan__img img {
     height: 270px;
-}
+  }
   .loc__img img {
     height: 270px;
-}
-.loc ._active {
+  }
+  .loc ._active {
     top: 50px;
-}
+  }
   .loc__par {
     height: 145px;
   }
@@ -2197,7 +2194,7 @@ html {
   }
   .run {
     padding-bottom: 30px;
-}
+  }
   .online .online__inner {
     padding-bottom: 35px;
   }
@@ -2313,10 +2310,10 @@ html {
   }
   .loc__title {
     font-size: 22px;
-}
-.clan__title {
+  }
+  .clan__title {
     font-size: 22px;
-}
+  }
 }
 @media (max-width: 400px) {
   .run .run-pagination {

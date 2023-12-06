@@ -390,8 +390,6 @@ html {
   background-repeat: no-repeat;
   background-size: 100% 970px;
   background-position: center bottom;
-  -webkit-box-shadow: inset 0px 0px 100px #190224;
-          box-shadow: inset 0px 0px 100px #190224;
 }
 .about .about__after {
   display: none;
@@ -453,7 +451,7 @@ html {
   position: relative;
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/fight2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -30px;
+  background-position: 0px 0px;
   background-size: cover 700px;
 }
 .fight__after {
@@ -524,7 +522,7 @@ html {
   font-weight: bold;
   font-style: italic;
   text-shadow: 0 0 20px #8de8ff;
-  margin-top: 65px;
+  margin-top: 110px;
   margin-bottom: 199px;
 }
 .fight__subtitle {
@@ -550,13 +548,11 @@ html {
 }
 
 .online {
-  -webkit-box-shadow: 0px -45px 100px 10px #051114;
-          box-shadow: 0px -45px 100px 10px #051114;
   padding-bottom: 326px;
   position: relative;
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/shariki2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -60px;
+  background-position: 0px 0px;
   background-size: cover;
 }
 .online__after {
@@ -588,15 +584,15 @@ html {
   right: -950px;
   -webkit-transition: 1s;
   transition: 1s;
+  z-index: 10;
 }
 .online ._active {
   top: 40px;
   right: -50px;
-  z-index: 5;
 }
 .online__img2 {
   position: absolute;
-  top: 40px;
+  top: 550px;
   right: -950px;
   -webkit-transition: 2s;
   transition: 2s;
@@ -643,8 +639,8 @@ html {
   font-weight: bold;
   font-style: italic;
   text-shadow: 0 0 40px #8de8ff;
-  margin-top: 45px;
-  margin-bottom: 199px;
+  margin-top: 135px;
+  margin-bottom: 170px;
 }
 .online__subtitle {
   font-size: 19px;
@@ -667,7 +663,7 @@ html {
 }
 
 .run {
-  padding-bottom: 100px;
+  padding-bottom: 0px;
   background: url("https://miks1na.github.io/Kalmarus456/images/Hue_Saturation 1.png");
   background-repeat: no-repeat;
   background-position: center -250px;
@@ -787,13 +783,11 @@ html {
 }
 
 .custom {
-  -webkit-box-shadow: 0px -45px 30px 8px #121401;
-          box-shadow: 0px -45px 30px 8px #121401;
   padding-bottom: 276px;
   position: relative;
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/castum2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -30px;
+  background-position: 0px 0px;
   background-size: cover 700px;
 }
 .custom__after {
@@ -870,7 +864,7 @@ html {
   font-weight: bold;
   font-style: italic;
   text-shadow: 0 0 40px yellow;
-  margin-top: 65px;
+  margin-top: 105px;
   margin-bottom: 155px;
 }
 .custom__subtitle {
@@ -899,8 +893,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0px;
-  -webkit-box-shadow: 0px -45px 100px 70px #01000b;
-          box-shadow: 0px -45px 100px 70px #01000b;
 }
 .pers__inner {
   position: relative;
@@ -970,13 +962,11 @@ html {
 }
 
 .friends {
-  -webkit-box-shadow: 0px -45px 30px 8px #001201;
-          box-shadow: 0px -45px 30px 8px #001201;
   padding-bottom: 200px;
   position: relative;
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/lobby2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -30px;
+  background-position: 0px 0px;
   background-size: cover 700px;
 }
 .friends__after {
@@ -1053,7 +1043,7 @@ html {
   font-weight: bold;
   font-style: italic;
   text-shadow: 0 0 40px yellow;
-  margin-top: 65px;
+  margin-top: 95px;
   margin-bottom: 80px;
 }
 .friends__subtitle {
@@ -1089,13 +1079,11 @@ html {
 }
 
 .loc {
-  -webkit-box-shadow: 0px -45px 70px 30px #220a13;
-          box-shadow: 0px -45px 70px 30px #220a13;
   padding-bottom: 200px;
   position: relative;
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/krovat2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -30px;
+  background-position: 0px 0px;
   background-size: cover 700px;
 }
 .loc__after {
@@ -1175,7 +1163,7 @@ html {
   font-weight: bold;
   font-style: italic;
   text-shadow: 0 0 40px #ffc4f3;
-  margin-top: 65px;
+  margin-top: 95px;
   margin-bottom: 255px;
 }
 .loc__subtitle {
@@ -1200,13 +1188,11 @@ html {
 }
 
 .clan {
-  -webkit-box-shadow: 0px -45px 100px 50px #091d22;
-          box-shadow: 0px -45px 100px 50px #091d22;
   padding-bottom: 376px;
   position: relative;
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/klan2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -60px;
+  background-position: 0px 0px;
   background-size: cover;
 }
 .clan__after {
@@ -1283,8 +1269,8 @@ html {
   font-weight: bold;
   font-style: italic;
   text-shadow: 0 0 40px #8de8ff;
-  margin-top: 45px;
-  margin-bottom: 199px;
+  margin-top: 140px;
+  margin-bottom: 160px;
 }
 .clan__subtitle {
   font-size: 19px;
@@ -1312,7 +1298,7 @@ html {
   position: relative;
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/magaz2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -80px;
+  background-position: 0px 0px;
   background-size: cover;
 }
 .moda__after {
@@ -1389,8 +1375,8 @@ html {
   font-weight: bold;
   font-style: italic;
   text-shadow: 0 0 40px #8de8ff;
-  margin-top: 45px;
-  margin-bottom: 229px;
+  margin-top: 130px;
+  margin-bottom: 150px;
 }
 .moda__subtitle {
   font-size: 19px;
@@ -1414,13 +1400,11 @@ html {
 }
 
 .vip {
-  -webkit-box-shadow: 0px -85px 50px 50px #2e1b03;
-          box-shadow: 0px -85px 50px 50px #2e1b03;
   padding-bottom: 270px;
   position: relative;
   background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/vip2.webp");
   background-repeat: no-repeat;
-  background-position: 0px -100px;
+  background-position: 0px 0px;
   background-size: cover;
 }
 .vip__after {
@@ -1497,8 +1481,8 @@ html {
   font-weight: bold;
   font-style: italic;
   text-shadow: 0 0 40px yellow;
-  margin-top: 45px;
-  margin-bottom: 229px;
+  margin-top: 130px;
+  margin-bottom: 160px;
 }
 .vip__subtitle {
   font-size: 19px;
@@ -2154,6 +2138,13 @@ html {
   }
 }
 @media (max-width: 500px) {
+  .video {
+    background-size: auto 100%;
+    margin-bottom: 30px;
+  }
+  .online__img2 {
+    top: 134px;
+  }
   .clan {
     -webkit-box-shadow: none;
     box-shadow: none;
