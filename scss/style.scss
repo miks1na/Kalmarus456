@@ -85,13 +85,13 @@ html {
   ::-webkit-scrollbar {
     width: 6px; /* ширина для вертикального скролла */
     height: 1px; /* высота для горизонтального скролла */
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.1);
     opacity: 0.5;
-    border-radius: 9em;
+    border-radius: 0;
   }
   ::-webkit-scrollbar-thumb {
     background-color: gray;
-    border-radius: 9em;
+    border-radius: 0;
     opacity: 0.4;
   }
 }
@@ -122,7 +122,8 @@ html {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(150, 149, 149, 0.5);
       h4 {
         font-size: 21px;
         font-family: "Roboto";
@@ -136,9 +137,8 @@ html {
     }
     .header__countries-bot {
       overflow-y: scroll;
-      height: 330px;
-      padding-top: 10px;
-      border-top: 1px solid rgba(150, 149, 149, 0.5);
+      height: 320px;
+      margin-top: 10px;
       display: flex;
       flex-direction: column;
       .header__item:hover {
@@ -317,8 +317,6 @@ html {
   }
 }
 .about {
-  &__right-inner {
-  }
   background-image: url("https://miks1na.github.io/Kalmarus456/images/shutterstock_2137531191.png");
   background-repeat: no-repeat;
   background-size: 100% 970px;
@@ -346,7 +344,7 @@ html {
   &__inner {
     display: flex;
     flex-direction: row;
-    padding: 20px 0 42px 0;
+    padding: 0px 0 42px 0;
     gap: 22px;
     position: relative;
   }
@@ -402,7 +400,7 @@ html {
     right: -150px;
     transition: 1s;
   }
-  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/fight.jpg");
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/fight2.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
@@ -505,7 +503,7 @@ html {
     top: 550px;
     right: 130px;
   }
-  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/shariki.jpg");
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/shariki2.jpg");
   background-repeat: no-repeat;
   background-position: 0px -60px;
   background-size: cover;
@@ -590,7 +588,7 @@ html {
     position: relative;
   }
   &__img {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 85px;
   }
   h3 {
@@ -624,7 +622,7 @@ html {
     margin: 0 auto;
   }
   .swiper-pagination-bullet {
-    width: 68px;
+    width: 55px;
     height: 6px;
     border-radius: 0;
     background-color: #494949;
@@ -709,7 +707,7 @@ html {
     right: -50px;
     z-index: 5;
   }
-  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/castum.jpg");
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/castum2.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
@@ -870,7 +868,7 @@ html {
     right: -130px;
     z-index: 5;
   }
-  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/lobby.jpg");
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/lobby2.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
@@ -978,7 +976,7 @@ html {
     right: -150px;
     z-index: 5;
   }
-  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/krovat.jpg");
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/krovat2.jpg");
   background-repeat: no-repeat;
   background-position: 0px -30px;
   background-size: cover 700px;
@@ -1072,7 +1070,7 @@ html {
     right: -50px;
     z-index: 5;
   }
-  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/klan.jpg");
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/klan2.jpg");
   background-repeat: no-repeat;
   background-position: 0px -60px;
   background-size: cover;
@@ -1165,7 +1163,7 @@ html {
     right: -160px;
     z-index: 5;
   }
-  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/magaz.jpg");
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/magaz2.jpg");
   background-repeat: no-repeat;
   background-position: 0px -80px;
   background-size: cover;
@@ -1259,7 +1257,7 @@ html {
     right: -160px;
     z-index: 5;
   }
-  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/vip.jpg");
+  background-image: url("https://miks1na.github.io/Kalmarus456/images/podlozhki/vip2.jpg");
   background-repeat: no-repeat;
   background-position: 0px -100px;
   background-size: cover;
@@ -1325,7 +1323,7 @@ html {
   background-repeat: no-repeat;
   background-position: center 0;
   &__top {
-    padding-bottom: 114px;
+    padding-bottom: 130px;
   }
   h2 {
     text-align: center;
@@ -1336,7 +1334,7 @@ html {
     font-style: italic;
     text-shadow: 0 0 40px yellow;
     padding-top: 90px;
-    margin-bottom: 85px;
+    margin-bottom: 75px;
     padding-left: 170px;
   }
   img {
@@ -1951,14 +1949,15 @@ html {
     display: block;
   }
   .tous {
-    background-size: 400px auto;
+    background-size: 950px auto;
 }
 .tous h2 {
-  padding-top: 180px;
-  margin-bottom: 20px;
+  padding-top: 60px;
+  margin-bottom: 80px;
   padding-left: 0;
   text-align: center;
   font-size: 40px;
+  padding-left: 25%;
 }
 .tous__top {
   padding-bottom: 0px;
@@ -1967,16 +1966,17 @@ html {
     margin-bottom: 40px;
 }
 .tous__par {
-  padding: 21px 0px 0px 0px;
+  padding: 21px 15px 0px 15px;
   margin-left: 0px;
   font-size: 14px;
   font-family: "Roboto";
   color: rgb(162, 162, 162);
   line-height: 1.64;
   text-align: center;
+  margin-top: 100px;
 }
 .tous__links {
-  padding-left: 0; 
+  padding-left: 35%; 
 }
 .tous img {
   width: 200px;
